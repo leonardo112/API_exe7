@@ -37,7 +37,6 @@ namespace API_exe7.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        // GET: api/Usuario/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Usuario>> GetUsuario(int id)
         {
@@ -57,9 +56,6 @@ namespace API_exe7.Controllers
         /// <param name="id"></param>
         /// <param name="usuario"></param>
         /// <returns></returns>
-        // PUT: api/Usuario/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUsuario(int id, Usuario usuario)
         {
@@ -94,9 +90,6 @@ namespace API_exe7.Controllers
         /// </summary>
         /// <param name="usuario"></param>
         /// <returns></returns>
-        // POST: api/Usuario
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
         public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
         {
